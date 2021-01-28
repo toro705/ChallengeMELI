@@ -9,7 +9,7 @@ const { StaticRouter, matchPath } = require( 'react-router-dom' );
 const app = express();
 
 // import App component
-const { App } = require( '../src/components/app' );
+const { App } = require( '../src/containers/app' );
 
 // import routes
 const routes = require( './routes' );
@@ -18,6 +18,11 @@ const routes = require( './routes' );
 app.get( /\.(js|css|map|ico)$/, express.static( path.resolve( __dirname, '../dist' ) ) );
 
 // for any other requests, send `index.html` as a response
+
+app.get('/api/*', function (req, res, next) {
+    res.send('sape');
+  });
+  
 app.use( '*', async ( req, res ) => {
 
     // get matched route

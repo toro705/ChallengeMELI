@@ -1,0 +1,27 @@
+.product {
+    padding: 16px 0;
+    &:first-child {
+        padding-top: 0;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+    .image { 
+        width: 180px;
+        max-width: 100%;
+        border-radius: 4px;
+    }
+    .descrip {
+        padding-left: 16px;
+        .shipping {
+            height: auto;
+            margin-left: 10px;
+        }
+        .city {
+            p {
+                justify-content: flex-end;
+                text-align: right;
+            }
+        }
+    }
+}

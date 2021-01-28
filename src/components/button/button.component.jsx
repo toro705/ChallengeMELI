@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Counter extends React.Component {
+export class Button extends React.Component {
     constructor() {
         console.log( 'Counter.constructor()' );
 
@@ -29,7 +29,7 @@ export class Counter extends React.Component {
 
         return (
             <div className='ui-counter'>
-                <p className='ui-counter__title'>Counter Widget</p>
+                <p className='ui-counter__title'>Counter Widget change</p>
 
                 <div className='ui-counter__body'>
                     <p className='ui-counter__body__name'>{ this.props.name }</p>

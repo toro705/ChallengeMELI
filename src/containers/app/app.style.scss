@@ -1,0 +1,80 @@
+$breadcrumb-divider: quote(">");
+$primary: #3483FA;
+$warning: #FFE600;
+$color-1: #333333;
+$color-2: #666666;
+$color-3: #999999;
+$color-4: #EEEEEE;  
+$spacing1: 16px;
+$spacing2: 32px;
+@import '~bootstrap/scss/bootstrap.scss';
+.mainWrapper {
+    background-color: $color-4
+}
+p {
+    margin: 0;
+}
+a{
+    color: inherit;
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        cursor: pointer;
+    }
+
+}
+.color-1 {
+    color: $color-1!important;
+}
+.color-2 {
+    color: $color-2!important;
+}
+.color-3 {
+    color: $color-3!important;
+}
+.color-4 {
+    color: $color-4!important;
+}
+.t1 {
+ font-size: 46px;
+}
+.t2 {
+ font-size: 36px;
+}
+.t3 {
+ font-size: 28px;
+}
+.t4 {
+ font-size: 24px;
+}
+.p1 {
+    font-size: 12px;
+}
+.p2 {
+    font-size: 14px;
+}
+.p3 {
+    font-size: 16px;
+}
+.p4 {
+    font-size: 18px;
+}
+.mb-16 {
+    margin-bottom: $spacing1;
+}
+.mb-32 {
+    margin-bottom: $spacing2;
+}
+.padding-16 {
+    padding: $spacing1;
+}
+.padding-32 {
+    padding: $spacing2;
+}
+.bg-warning {
+    background-color: $warning;
+}

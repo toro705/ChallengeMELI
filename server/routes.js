@@ -1,15 +1,21 @@
-const { Counter } = require( '../src/components/counter' );
-const { Post } = require( '../src/components/post' );
+const { Home } = require( '../src/containers/home' );
+const { List } = require( '../src/containers/list' );
+const { Item } = require( '../src/containers/item' );
 
 module.exports = [
     {
         path: '/',
         exact: true,
-        component: Counter,
+        component: Home,
     },
     {
-        path: '/post',
+        path: '/:query',
         exact: true,
-        component: Post,
+        component: List,
+    },
+    {
+        path: '/item:id',
+        exact: true,
+        component: Item,
     }
 ];
