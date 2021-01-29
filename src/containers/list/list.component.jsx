@@ -29,6 +29,7 @@ export class List extends React.Component {
             };
         }
     }
+    //funcion estatica que se ejecuta en el pre-fetch
     static fetchData() {
 
         return axios.get( 'https://jsonplaceholder.typicode.com/posts/3' ).then( response => {
