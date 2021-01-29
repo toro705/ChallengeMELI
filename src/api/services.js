@@ -19,7 +19,7 @@ const getFrom = async (url, urlParams, token) => {
     url = replaceParams(url, urlParams);
   }
   url = `${host}${url}`;
-    let res = await await fetch(url, {
+    let res = await fetch(url, {
                   method: 'GET',
                   headers: {
                     'x-auth-token': token,
