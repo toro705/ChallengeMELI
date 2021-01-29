@@ -8,7 +8,7 @@
     "start:ssr": "node server"
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "file-loader": "^6.2.0",
     "prop-types": "^15.7.2",
