@@ -2,16 +2,20 @@ import React from 'react';
 import Product from './product';
 const renderItems = (items) => {
     console.log('[ProductList Items]', items)
-    return items.map((i,key) => {
-        return (<Product 
-                    key={i.id}
-                    title={i.title}
-                    free_shipping={i.free_shipping}
-                    picture={i.picture}
-                    price={i.price.amount}
-                    city={i.city}
-                />);
-    })
+    if (items !== null) {
+        return items.map((i,key) => {
+            return (<Product 
+                        key={i.id}
+                        id={i.id}
+                        title={i.title}
+                        free_shipping={i.free_shipping}
+                        picture={i.picture}
+                        price={i.price.amount}
+                        city={i.city}
+                    />);
+        })
+    }
+    return null
 };
 const ProductList = (props) => {
     return(
