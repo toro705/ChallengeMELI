@@ -3,7 +3,7 @@ import Lupa from '../../../assets/ic_Search.png';
 const handleSubmit = (event) => {
     event.preventDefault();
     let searchValue = event.target[0].value;
-    location.replace(`/${searchValue}`);
+    location.replace(`/items?search=${searchValue}`);
     
 }
 const Searchbar = (props) => {
