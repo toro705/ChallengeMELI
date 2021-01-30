@@ -18,16 +18,11 @@ const routes = require( './routes' );
 app.get( /\.(js|css|map|ico)$/, express.static( path.resolve( __dirname, '../dist' ) ) );
 
 // for any other requests, send `index.html` as a response
-
-app.get('/api/*', function (req, res, next) {
-    res.send('sape');
-  });
-  
-app.use( '*', async ( req, res ) => {
+app.use( '/*', async ( req, res ) => {
 
     // get matched route
     const matchRoute = routes.find( route => matchPath( req.originalUrl, route ) );
-
+    
     // fetch data of the matched component
     let componentData = null;
     if( typeof matchRoute.component.fetchData === 'function' ) {
