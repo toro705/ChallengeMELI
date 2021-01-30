@@ -50,7 +50,7 @@ export class Item extends React.Component {
                             <div className="productstatus mb-16"><p className="p2">{conditionEdit + ' - ' + sold_quantity + ' vendidos'}</p></div>
                             <p className="title mb-32 t4">{title}</p>
                             <p className="price mb-32 t1">$ {formatNumber(price.amount)}</p>
-                            <button type="button" class="btn btn-md btn-primary btn-block">Comprar</button>
+                            <button type="button" className="btn btn-md btn-primary btn-block">Comprar</button>
                         </div>
                     </div>
                 </BoxContainer>
