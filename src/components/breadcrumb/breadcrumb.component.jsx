@@ -3,7 +3,7 @@ const categories = ['categoria1', 'categoria2', 'categoria3']
 const renderCrumbs = (props) => {
     console.log(categories)
     return categories.map((i,key) => {
-        return (<li key={key}className="breadcrumb-item"><a href="#" class="color-2">{i}</a></li>);
+        return (<li key={key} className="breadcrumb-item"><a href="/" className="color-2">{i}</a></li>);
     })
 };
 const BreadCrumb = (props) => {
