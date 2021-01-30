@@ -1,5 +1,4 @@
-const list = {
-    query: {  
+const listQuery = {
         "author": {    
             "name": 'Alan',
             "lastname": 'Toro'  
@@ -46,8 +45,9 @@ const list = {
                 "free_shipping": true    
             },
         ]
-    },
-    categories: [
+
+}
+const listCategories =  [
                 {
                   "id": "MLA1071",
                   "name": "Animales y Mascotas"
@@ -60,6 +60,5 @@ const list = {
                   "id": "MLA81636",
                   "name": "Comederos y Bebederos"
                 }
-      ], 
-}
-export {list}
+      ];
+export {listQuery, listCategories}
