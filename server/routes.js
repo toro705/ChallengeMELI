@@ -14,7 +14,7 @@ module.exports = [
         component: List,
     },
     {
-        path: '/item:id',
+        path: '/items/:id',
         exact: true,
         component: Item,
     }
