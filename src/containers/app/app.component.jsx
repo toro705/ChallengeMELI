@@ -26,18 +26,18 @@ export class App extends React.Component {
                     <Route
                         path='/'
                         exact={ true }
-                        render={() => <Home />}
+                        render={Home}
                     />
 
                     <Route
-                        path='/item'
+                        path='/items'
                         exact={ true }
-                        component={ () => <Item /> }
+                        component={List}
                     />
                     <Route
-                        path='/:query'
+                        path='/item/:id'
                         exact={ true }
-                        component={ () => <List /> }
+                        component={Item}
                     />
                 </Switch>
                 
